@@ -1,0 +1,37 @@
+{
+  "name": "test",
+  "version": "7.7.0",
+  "description": "770",
+  "private": false,
+  "scripts": {
+    "client": "npm start --prefix client",
+    "server": "npm start --prefix server",
+    "server_dev": "npm run dev --prefix server",
+    "start_all": "concurrently \"npm run client\" \"npm run server\" "
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "main": "index.js",
+  "author": "Yair",
+  "license": "ISC",
+  "keywords": [
+    "node",
+    "react",
+    "CRUD"
+  ],
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  }
+}
